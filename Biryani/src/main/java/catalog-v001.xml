@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1563452400721" name="http://www.cake.com/ontologies/cake.owl" uri="cake.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1563452400721" name="http://www.hotels.com/ontologies/hotel.owl" uri="hotelOntology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1563452400721" name="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani" uri="biriyani.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1563452400721" name="duplicate:http://www.semanticweb.org/pcnetcomputers/ontologies/2019/6/iceCream" uri="IceCreamFinal.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1563452400721" name="duplicate:http://www.semanticweb.org/pcnetcomputers/ontologies/2019/6/iceCream" uri="icecreamNew.owl"/>
+    </group>
+</catalog>

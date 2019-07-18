@@ -1,0 +1,2015 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#"
+     xml:base="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#hasChicken -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#hasChicken">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Biriyani"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Chicken"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#hasMeat"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#isChickenOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#hasContent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#hasContent">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#isContentOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#hasEgg -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#hasEgg">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Biriyani"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Egg"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#hasContent"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#isEggOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#hasMeat -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#hasMeat">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Biriyani"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Meat"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#hasContent"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#isMeatOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#hasMutton -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#hasMutton">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Biriyani"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Mutton"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#hasMeat"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#isMuttonOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#hasNonVegType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#hasNonVegType"/>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#hasRiceBase -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#hasRiceBase">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Biriyani"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#RiceBase"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#hasContent"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#isRiceBaseOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#hasSideDish -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#hasSideDish">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Biriyani"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#SideDish"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#hasContent"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#isSlideDishOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#hasSize -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#hasSize">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Biriyani"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#SizePartition"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#hasSpices -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#hasSpices">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Biriyani"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Spices&amp;Condiments"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#hasContent"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#isSpicesOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#hasVegitable -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#hasVegitable">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Biriyani"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Vegitable&amp;Crud"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#hasContent"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#isVegitableOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#hastypeOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#hastypeOf">
+        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Biriyani"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#hastypeOf"/>
+        <rdfs:domain rdf:resource="&owl;Thing"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#isChickenOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#isChickenOf">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;InverseFunctionalProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Biriyani"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Chicken"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#isMeatOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#isContentOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#isContentOf">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#isEggOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#isEggOf">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;InverseFunctionalProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Biriyani"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Egg"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#isContentOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#isMeatOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#isMeatOf">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Biriyani"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Meat"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#isContentOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#isMuttonOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#isMuttonOf">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;InverseFunctionalProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Biriyani"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Mutton"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#isMeatOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#isRiceBaseOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#isRiceBaseOf">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Biriyani"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#RiceBase"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#isContentOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#isSlideDishOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#isSlideDishOf">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Biriyani"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#SideDish"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#isContentOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#isSpicesOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#isSpicesOf">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;InverseFunctionalProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Biriyani"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Spices&amp;Condiments"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#isContentOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#isTypeOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#isTypeOf">
+        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Biriyani"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#isTypeOf"/>
+        <rdfs:range rdf:resource="&owl;Thing"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#isVegitableOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#isVegitableOf">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Biriyani"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Vegitable&amp;Crud"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#isContentOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#hasCaloryValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#hasCaloryValue"/>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#hasImage -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#hasImage">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Biriyani"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#AfghanBiryani -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#AfghanBiryani">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#NonIndian"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Ambur/VaniyambadiBiryan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Ambur/VaniyambadiBiryan">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Indian"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Basmati -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Basmati">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#RiceBase"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Beef -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Beef">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Meat"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#BeefBiryani -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#BeefBiryani">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#NamedBiriyani"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#BhatKaliBiryani -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#BhatKaliBiryani">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#NamedBiriyani"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Bhatkali/NavayathiBiryani -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Bhatkali/NavayathiBiryani">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Indian"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Biriyani -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Biriyani">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#hasSize"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#SizePartition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#hasRiceBase"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#RiceBase"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#hasImage"/>
+                <owl:someValuesFrom rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#hasSideDish"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Brinjal"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#DahiChutney"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Korma"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Ratia"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Salad"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#BohriBiryani -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#BohriBiryani">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Indian"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Brinjal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Brinjal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#SideDish"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#BurmaBiryani -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#BurmaBiryani">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#NonIndian"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Cashew -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Cashew">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Vegitable&amp;Crud"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#ChettinadBiryani -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#ChettinadBiryani">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Indian"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Chicken -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Chicken">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Meat"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Chilli -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Chilli">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Vegitable&amp;Crud"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Chinigura -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Chinigura">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#RiceBase"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Curd -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Curd">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Vegitable&amp;Crud"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#DahiChutney -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#DahiChutney">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#SideDish"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#DelhiBiryani -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#DelhiBiryani">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Indian"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#DhakaiyaHajiBiriyani -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#DhakaiyaHajiBiriyani">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Indian"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#DindigulBiryani -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#DindigulBiryani">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Indian"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Egg -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Egg">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#ExtremeAmount -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#ExtremeAmount">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Spices&amp;Condiments"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Fish -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Fish">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Meat"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#HighCaloried -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#HighCaloried">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Biriyani"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#hasCaloryValue"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="&xsd;integer"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minInclusive rdf:datatype="&xsd;integer">500</xsd:minInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#HyderabadiBiryani -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#HyderabadiBiryani">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Indian"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Indian -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Indian">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Biriyani"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#IndonesianBiryani -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#IndonesianBiryani">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#NonIndian"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#JeerkaSamba -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#JeerkaSamba">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#RiceBase"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#KacchiBiryani -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#KacchiBiryani">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#NamedBiriyani"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#KalyaniBiryani -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#KalyaniBiryani">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Indian"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Khyma -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Khyma">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#RiceBase"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Kismis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Kismis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Vegitable&amp;Crud"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#KolkataBiryani -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#KolkataBiryani">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Indian"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Korma -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Korma">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#SideDish"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#LargeAmount -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#LargeAmount">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Spices&amp;Condiments"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#LowCaloried -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#LowCaloried">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Biriyani"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#hasCaloryValue"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="&xsd;integer"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxExclusive rdf:datatype="&xsd;integer">500</xsd:maxExclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#MauritiusBiryani -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#MauritiusBiryani">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#NonIndian"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Meat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Meat">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Memoni/KutchiBiryani -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Memoni/KutchiBiryani">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Indian"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#MiddleEastBiryani -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#MiddleEastBiryani">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#NonIndian"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Mutton -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Mutton">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Meat"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#NamedBiriyani -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#NamedBiriyani">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Biriyani"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#NonIndian -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#NonIndian">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Biriyani"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Oninon -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Oninon">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Vegitable&amp;Crud"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#PhilippineBiryani -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#PhilippineBiryani">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#NonIndian"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Pickel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Pickel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Vegitable&amp;Crud"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Potato -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Potato">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Vegitable&amp;Crud"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Prawn -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Prawn">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Meat"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Ratia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Ratia">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#SideDish"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#RawtherBiryani -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#RawtherBiryani">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Indian"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#RegularAmount -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#RegularAmount">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Spices&amp;Condiments"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#RiceBase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#RiceBase">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Salad -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Salad">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#SideDish"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#SideDish -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#SideDish">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#SindhiBiryani -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#SindhiBiryani">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Indian"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Singapore&amp;MalaysiaBiryani -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Singapore&amp;MalaysiaBiryani">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#NonIndian"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#SizePartition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#SizePartition">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#SmallAmount -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#SmallAmount">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Spices&amp;Condiments"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#SouthAfricanBiryani -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#SouthAfricanBiryani">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#NonIndian"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#SouthIndianBiryani -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#SouthIndianBiryani">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Indian"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Spices&amp;Condiments -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Spices&amp;Condiments">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Tehari -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Tehari">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Veg"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#ThailandBiryani -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#ThailandBiryani">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#NonIndian"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#ThalasseryBiryani -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#ThalasseryBiryani">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Indian"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Tomato -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Tomato">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Vegitable&amp;Crud"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Veg -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Veg">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#NamedBiriyani"/>
+                    <owl:Class>
+                        <owl:complementOf>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Class>
+                                        <owl:unionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Chicken"/>
+                                            <rdf:Description rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Fish"/>
+                                            <rdf:Description rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Mutton"/>
+                                            <rdf:Description rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Prawn"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#hasMeat"/>
+                                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Beef"/>
+                                            </owl:Restriction>
+                                        </owl:unionOf>
+                                    </owl:Class>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#hasEgg"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Egg"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:complementOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Vegitable&amp;Crud -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Vegitable&amp;Crud">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#fruit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#fruit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Vegitable&amp;Crud"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#AfghanBiryani -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#AfghanBiryani">
+        <rdf:type rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#AfghanBiryani"/>
+        <hasCaloryValue rdf:datatype="&xsd;integer">408</hasCaloryValue>
+        <isTypeOf rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#AfghanBiryani"/>
+        <hasRiceBase rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Basmati"/>
+        <hasSideDish rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Brinjal"/>
+        <hasVegitable rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#DryFruit"/>
+        <hasSideDish rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Korma"/>
+        <isTypeOf rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#NonIndian"/>
+        <hasSpices rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#RegularAmount"/>
+        <hasSideDish rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Salad"/>
+        <hasMeat rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#SliceChicken"/>
+        <hasChicken rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#SliceChicken"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Ambur/VaniyambadiBiryan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Ambur/VaniyambadiBiryan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Ambur/VaniyambadiBiryan"/>
+        <hasCaloryValue rdf:datatype="&xsd;integer">520</hasCaloryValue>
+        <hasRiceBase rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Basmati"/>
+        <hasSideDish rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Brinjal"/>
+        <hasVegitable rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Curd"/>
+        <hasSideDish rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#DahiChutne"/>
+        <isTypeOf rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Indian"/>
+        <hasSideDish rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Korma"/>
+        <hasSpices rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#RegularAmount"/>
+        <hasSideDish rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Salad"/>
+        <hasMeat rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#SliceChicken"/>
+        <hasChicken rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#SliceChicken"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Apple -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Apple">
+        <rdf:type rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#fruit"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Basmati -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Basmati">
+        <rdf:type rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Basmati"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Beef -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Beef">
+        <rdf:type rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Beef"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#BeefBiryani -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#BeefBiryani">
+        <rdf:type rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#BeefBiryani"/>
+        <hasCaloryValue rdf:datatype="&xsd;integer">502</hasCaloryValue>
+        <hasImage rdf:datatype="&xsd;string">https://en.wikipedia.org/wiki/Biryani#/media/File:Food-Beef-Biryani-2.jpg</hasImage>
+        <hasRiceBase rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Basmati"/>
+        <hasMeat rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Beef"/>
+        <hasEgg rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#BoiledEgg"/>
+        <hasSideDish rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#DahiChutne"/>
+        <hasEgg rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#FriedEgg"/>
+        <hasSideDish rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Korma"/>
+        <hasSize rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Large"/>
+        <isTypeOf rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#NamedBiriyani"/>
+        <hasVegitable rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Onion"/>
+        <hasSize rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Regular"/>
+        <hasSpices rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#RegularAmount"/>
+        <hasVegitable rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Tomato"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#BhatKaliBiryani -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#BhatKaliBiryani">
+        <rdf:type rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#BhatKaliBiryani"/>
+        <hasCaloryValue rdf:datatype="&xsd;integer">500</hasCaloryValue>
+        <hasRiceBase rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Basmati"/>
+        <hasMeat rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Beef"/>
+        <hasEgg rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#BoiledEgg"/>
+        <hasEgg rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#FriedEgg"/>
+        <hasSideDish rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Korma"/>
+        <hasSize rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Large"/>
+        <hasMutton rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Mutton"/>
+        <hasMeat rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Mutton"/>
+        <isTypeOf rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#NamedBiriyani"/>
+        <hasVegitable rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Onion"/>
+        <hasSize rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Regular"/>
+        <hasSpices rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#RegularAmount"/>
+        <hasChicken rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#SliceChicken"/>
+        <hasChicken rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#TandooriChicken"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Bhatkali/NavayathiBiryani -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Bhatkali/NavayathiBiryani">
+        <rdf:type rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Bhatkali/NavayathiBiryani"/>
+        <hasCaloryValue rdf:datatype="&xsd;integer">365</hasCaloryValue>
+        <hasImage></hasImage>
+        <hasRiceBase rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Basmati"/>
+        <hasMeat rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Beef"/>
+        <hasSideDish rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Brinjal"/>
+        <hasSideDish rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#DahiChutne"/>
+        <hasMeat rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#DevilledPrawn"/>
+        <hasMeat rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#FriedEgg"/>
+        <hasMeat rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#FriedFish"/>
+        <isTypeOf rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Indian"/>
+        <hasSideDish rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Korma"/>
+        <hasMutton rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Mutton"/>
+        <hasMeat rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Mutton"/>
+        <hasVegitable rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Onion"/>
+        <hasSideDish rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Ratia"/>
+        <hasSpices rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#RegularAmount"/>
+        <hasChicken rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#RostChicken"/>
+        <hasMeat rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#RostChicken"/>
+        <hasSideDish rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Salad"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Biriyani -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Biriyani">
+        <rdf:type rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Biriyani"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#BohriBiryani -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#BohriBiryani">
+        <rdf:type rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#BohriBiryani"/>
+        <hasCaloryValue rdf:datatype="&xsd;integer">189</hasCaloryValue>
+        <hasRiceBase rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Basmati"/>
+        <hasSideDish rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Brinjal"/>
+        <isTypeOf rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Indian"/>
+        <hasSideDish rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Korma"/>
+        <hasSpices rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#RegularAmount"/>
+        <hasMeat rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#RostChicken"/>
+        <hasChicken rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#RostChicken"/>
+        <hasSideDish rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Salad"/>
+        <hasVegitable rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Tomato"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#BoiledEgg -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#BoiledEgg">
+        <rdf:type rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Egg"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Brinjal -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Brinjal">
+        <rdf:type rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Brinjal"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#BurmaBiryani -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#BurmaBiryani">
+        <rdf:type rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#BurmaBiryani"/>
+        <hasCaloryValue rdf:datatype="&xsd;integer">549</hasCaloryValue>
+        <hasRiceBase rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Basmati"/>
+        <isTypeOf rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#BurmaBiryani"/>
+        <hasVegitable rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Cashew"/>
+        <hasSideDish rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Korma"/>
+        <isTypeOf rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#NonIndian"/>
+        <hasSpices rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#RegularAmount"/>
+        <hasSideDish rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Salad"/>
+        <hasMeat rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#SliceChicken"/>
+        <hasChicken rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#SliceChicken"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Cashew -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Cashew">
+        <rdf:type rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Cashew"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Cheese -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Cheese">
+        <rdf:type rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Curd"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#ChettinadBiryani -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#ChettinadBiryani">
+        <rdf:type rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#ChettinadBiryani"/>
+        <hasCaloryValue rdf:datatype="&xsd;integer">250</hasCaloryValue>
+        <hasSideDish rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Brinjal"/>
+        <isTypeOf rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Indian"/>
+        <hasRiceBase rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#JeerkaSamba"/>
+        <hasSideDish rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Korma"/>
+        <hasMutton rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Mutton"/>
+        <hasMeat rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Mutton"/>
+        <hasSpices rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#RegularAmount"/>
+        <hasSideDish rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Salad"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Chinigura -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Chinigura">
+        <rdf:type rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Chinigura"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Curd -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Curd">
+        <rdf:type rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Curd"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#DahiChutne -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#DahiChutne">
+        <rdf:type rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#DahiChutney"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#DelhiBiryani -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#DelhiBiryani">
+        <rdf:type rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#DelhiBiryani"/>
+        <hasCaloryValue rdf:datatype="&xsd;integer">350</hasCaloryValue>
+        <hasImage rdf:datatype="&xsd;string">https://en.wikipedia.org/wiki/Biryani#/media/File:Vegetable_Biriyani.jpeg</hasImage>
+        <hasRiceBase rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Basmati"/>
+        <hasSideDish rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Brinjal"/>
+        <hasVegitable rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#GreenChilli"/>
+        <isTypeOf rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Indian"/>
+        <hasSideDish rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Korma"/>
+        <hasVegitable rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Pickel"/>
+        <hasSpices rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#RegularAmount"/>
+        <hasMeat rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#RostChicken"/>
+        <hasChicken rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#RostChicken"/>
+        <hasSideDish rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Salad"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#DevilledPrawn -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#DevilledPrawn">
+        <rdf:type rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Prawn"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#DhakaiyaHajiBiriyani -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#DhakaiyaHajiBiriyani">
+        <rdf:type rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#DhakaiyaHajiBiriyani"/>
+        <hasCaloryValue rdf:datatype="&xsd;integer">450</hasCaloryValue>
+        <hasImage rdf:datatype="&xsd;string">https://en.wikipedia.org/wiki/Biryani#/media/File:Bangladeshi_Biryani.jpg
+</hasImage>
+        <hasSideDish rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Brinjal"/>
+        <hasVegitable rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Cashew"/>
+        <hasVegitable rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Cheese"/>
+        <hasSpices rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#ExtremeAmount"/>
+        <hasEgg rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#FriedEgg"/>
+        <isTypeOf rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Indian"/>
+        <hasSideDish rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Korma"/>
+        <hasSize rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Large"/>
+        <hasMutton rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Mutton"/>
+        <hasMeat rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Mutton"/>
+        <hasVegitable rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Onion"/>
+        <hasSize rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Regular"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#DindigulBiryani -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#DindigulBiryani">
+        <rdf:type rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#DindigulBiryani"/>
+        <hasCaloryValue rdf:datatype="&xsd;integer">522</hasCaloryValue>
+        <hasRiceBase rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Basmati"/>
+        <hasVegitable rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Curd"/>
+        <hasSideDish rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Korma"/>
+        <hasSpices rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#RegularAmount"/>
+        <hasMeat rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#RostChicken"/>
+        <hasChicken rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#RostChicken"/>
+        <hasSideDish rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Salad"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#DryFruit -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#DryFruit">
+        <rdf:type rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#fruit"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#ExtremeAmount -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#ExtremeAmount">
+        <rdf:type rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#ExtremeAmount"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#FriedEgg -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#FriedEgg">
+        <rdf:type rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Egg"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#FriedFish -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#FriedFish">
+        <rdf:type rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Fish"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#FriedOnion -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#FriedOnion">
+        <rdf:type rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Oninon"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Ghee -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Ghee">
+        <rdf:type rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Curd"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#GreenChilli -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#GreenChilli">
+        <rdf:type rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Chilli"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#HyderabadiBiryani -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#HyderabadiBiryani">
+        <rdf:type rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#HyderabadiBiryani"/>
+        <hasCaloryValue rdf:datatype="&xsd;integer">650</hasCaloryValue>
+        <hasRiceBase rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Basmati"/>
+        <hasSideDish rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Brinjal"/>
+        <hasSideDish rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#DahiChutne"/>
+        <isTypeOf rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Indian"/>
+        <hasSideDish rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Korma"/>
+        <hasMeat rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Mutton"/>
+        <hasMutton rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Mutton"/>
+        <hasSpices rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#RegularAmount"/>
+        <hasChicken rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#RostChicken"/>
+        <hasMeat rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#RostChicken"/>
+        <hasSideDish rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Salad"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Indian -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Indian">
+        <rdf:type rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Indian"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#IndonesianBiryani -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#IndonesianBiryani">
+        <rdf:type rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#IndonesianBiryani"/>
+        <hasCaloryValue rdf:datatype="&xsd;integer">347</hasCaloryValue>
+        <hasRiceBase rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Basmati"/>
+        <hasSideDish rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Brinjal"/>
+        <hasVegitable rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Curd"/>
+        <isTypeOf rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#IndonesianBiryani"/>
+        <hasSideDish rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Korma"/>
+        <hasMeat rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Mutton"/>
+        <hasMutton rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Mutton"/>
+        <isTypeOf rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#NonIndian"/>
+        <hasSpices rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#RegularAmount"/>
+        <hasSideDish rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Salad"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#JeerkaSamba -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#JeerkaSamba">
+        <rdf:type rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#JeerkaSamba"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#KacchiBiryani -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#KacchiBiryani">
+        <rdf:type rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#KacchiBiryani"/>
+        <hasCaloryValue rdf:datatype="&xsd;integer">318</hasCaloryValue>
+        <hasRiceBase rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Basmati"/>
+        <hasSideDish rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Brinjal"/>
+        <hasRiceBase rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Chinigura"/>
+        <isTypeOf rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Indian"/>
+        <hasSideDish rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Korma"/>
+        <hasMutton rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Lamb"/>
+        <hasMeat rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Lamb"/>
+        <hasSize rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Large"/>
+        <hasMutton rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Mutton"/>
+        <hasMeat rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Mutton"/>
+        <isTypeOf rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#NamedBiriyani"/>
+        <hasSize rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Regular"/>
+        <hasSideDish rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Salad"/>
+        <hasChicken rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#SliceChicken"/>
+        <hasSpices rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#SmallAmount"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#KalyaniBiryani -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#KalyaniBiryani">
+        <rdf:type rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#KalyaniBiryani"/>
+        <hasRiceBase rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Basmati"/>
+        <hasMeat rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Beef"/>
+        <hasSideDish rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#DahiChutne"/>
+        <isTypeOf rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Indian"/>
+        <hasSideDish rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Korma"/>
+        <hasVegitable rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Onion"/>
+        <hasSpices rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#RegularAmount"/>
+        <hasVegitable rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Tomato"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Khyma -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Khyma">
+        <rdf:type rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Khyma"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Kismis -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Kismis">
+        <rdf:type rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Kismis"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#KolkataBiryani -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#KolkataBiryani">
+        <rdf:type rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#KolkataBiryani"/>
+        <hasCaloryValue rdf:datatype="&xsd;integer">348</hasCaloryValue>
+        <hasRiceBase rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Basmati"/>
+        <hasSideDish rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#DahiChutne"/>
+        <isTypeOf rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Indian"/>
+        <hasSideDish rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Korma"/>
+        <hasVegitable rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Potato"/>
+        <hasSideDish rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Salad"/>
+        <hasChicken rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#SliceChicken"/>
+        <hasMeat rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#SliceChicken"/>
+        <hasSpices rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#SmallAmount"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Korma -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Korma">
+        <rdf:type rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Korma"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Lamb -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Lamb">
+        <rdf:type rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Mutton"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Large -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Large">
+        <rdf:type rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#SizePartition"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#LargeAmount -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#LargeAmount">
+        <rdf:type rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#LargeAmount"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#MauritiusBiryani -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#MauritiusBiryani">
+        <rdf:type rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#MauritiusBiryani"/>
+        <hasCaloryValue rdf:datatype="&xsd;integer">220</hasCaloryValue>
+        <hasRiceBase rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Basmati"/>
+        <isTypeOf rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#MauritiusBiryani"/>
+        <isTypeOf rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#NonIndian"/>
+        <hasSpices rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#RegularAmount"/>
+        <hasChicken rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#RostChicken"/>
+        <hasMeat rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#RostChicken"/>
+        <hasMeat rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#SliceChicken"/>
+        <hasChicken rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#SliceChicken"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Memoni/KutchiBiryani -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Memoni/KutchiBiryani">
+        <rdf:type rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Memoni/KutchiBiryani"/>
+        <hasCaloryValue rdf:datatype="&xsd;integer">440</hasCaloryValue>
+        <hasRiceBase rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Basmati"/>
+        <hasSideDish rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Brinjal"/>
+        <hasSideDish rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#DahiChutne"/>
+        <hasSpices rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#ExtremeAmount"/>
+        <isTypeOf rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Indian"/>
+        <hasSideDish rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Korma"/>
+        <hasMeat rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Mutton"/>
+        <hasMutton rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Mutton"/>
+        <hasVegitable rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Onion"/>
+        <hasVegitable rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Potato"/>
+        <hasSideDish rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Salad"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#MiddleEastBiryani -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#MiddleEastBiryani">
+        <rdf:type rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#MiddleEastBiryani"/>
+        <hasCaloryValue rdf:datatype="&xsd;integer">297</hasCaloryValue>
+        <hasSideDish rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Brinjal"/>
+        <hasSideDish rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Korma"/>
+        <hasMeat rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Lamb"/>
+        <hasMutton rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Lamb"/>
+        <isTypeOf rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#MiddleEastBiryani"/>
+        <isTypeOf rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#NonIndian"/>
+        <hasSpices rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#RegularAmount"/>
+        <hasMeat rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#RostChicken"/>
+        <hasChicken rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#RostChicken"/>
+        <hasSideDish rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Salad"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Milk -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Milk">
+        <rdf:type rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Curd"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Mutton -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Mutton">
+        <rdf:type rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Mutton"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#NamedBiriyani -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#NamedBiriyani">
+        <rdf:type rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#NamedBiriyani"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#NonIndian -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#NonIndian">
+        <rdf:type rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#NonIndian"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Onion -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Onion">
+        <rdf:type rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Oninon"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#PhilippineBiryani -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#PhilippineBiryani">
+        <rdf:type rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#PhilippineBiryani"/>
+        <hasRiceBase rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Basmati"/>
+        <hasSideDish rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Brinjal"/>
+        <isTypeOf rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#NonIndian"/>
+        <isTypeOf rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#PhilippineBiryani"/>
+        <hasSpices rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#RegularAmount"/>
+        <hasChicken rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#RostChicken"/>
+        <hasMeat rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#RostChicken"/>
+        <hasSideDish rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Salad"/>
+        <hasMeat rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#SliceChicken"/>
+        <hasChicken rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#SliceChicken"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Pickel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Pickel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Pickel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Pineapple -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Pineapple">
+        <rdf:type rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#fruit"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Potato -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Potato">
+        <rdf:type rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Potato"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Ratia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Ratia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Ratia"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#RawtherBiryani -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#RawtherBiryani">
+        <rdf:type rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#RawtherBiryani"/>
+        <hasCaloryValue rdf:datatype="&xsd;integer">322</hasCaloryValue>
+        <hasRiceBase rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Basmati"/>
+        <isTypeOf rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Indian"/>
+        <hasSideDish rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Korma"/>
+        <hasMutton rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Mutton"/>
+        <hasMeat rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Mutton"/>
+        <hasSpices rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#RegularAmount"/>
+        <hasSideDish rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Salad"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Regular -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Regular">
+        <rdf:type rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#SizePartition"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#RegularAmount -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#RegularAmount">
+        <rdf:type rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#RegularAmount"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#RostChicken -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#RostChicken">
+        <rdf:type rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Chicken"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Salad -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Salad">
+        <rdf:type rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Salad"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#SideDish -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#SideDish">
+        <rdf:type rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#SideDish"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#SindhiBiryani -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#SindhiBiryani">
+        <rdf:type rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#SindhiBiryani"/>
+        <hasCaloryValue rdf:datatype="&xsd;integer">449</hasCaloryValue>
+        <hasImage rdf:datatype="&xsd;string">https://en.wikipedia.org/wiki/Biryani#/media/File:Sindhi_Biryani.JPG</hasImage>
+        <hasRiceBase rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Basmati"/>
+        <hasSideDish rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#DahiChutne"/>
+        <isTypeOf rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Indian"/>
+        <hasSize rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Large"/>
+        <hasSideDish rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Ratia"/>
+        <hasSize rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Regular"/>
+        <hasSpices rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#RegularAmount"/>
+        <hasChicken rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#TandooriChicken"/>
+        <hasMeat rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#TandooriChicken"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Singapore&amp;MalaysiaBiryani -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Singapore&amp;MalaysiaBiryani">
+        <rdf:type rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Singapore&amp;MalaysiaBiryani"/>
+        <hasCaloryValue rdf:datatype="&xsd;integer">400</hasCaloryValue>
+        <hasRiceBase rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Basmati"/>
+        <hasSideDish rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Brinjal"/>
+        <hasSideDish rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Korma"/>
+        <isTypeOf rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#NonIndian"/>
+        <hasMeat rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#RostChicken"/>
+        <hasChicken rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#RostChicken"/>
+        <hasSideDish rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Salad"/>
+        <isTypeOf rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Singapore&amp;MalaysiaBiryani"/>
+        <hasMeat rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#SliceChicken"/>
+        <hasChicken rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#SliceChicken"/>
+        <hasSpices rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#SmallAmount"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#SliceChicken -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#SliceChicken">
+        <rdf:type rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Chicken"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#SmallAmount -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#SmallAmount">
+        <rdf:type rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#SmallAmount"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#SouthAfricanBiryani -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#SouthAfricanBiryani">
+        <rdf:type rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#SouthAfricanBiryani"/>
+        <hasCaloryValue rdf:datatype="&xsd;integer">380</hasCaloryValue>
+        <hasSideDish rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Brinjal"/>
+        <hasVegitable rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#GreenChilli"/>
+        <hasSize rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Large"/>
+        <hasMutton rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Mutton"/>
+        <hasMeat rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Mutton"/>
+        <isTypeOf rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#NonIndian"/>
+        <hasVegitable rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Pickel"/>
+        <hasSize rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Regular"/>
+        <hasChicken rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#RostChicken"/>
+        <hasMeat rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#RostChicken"/>
+        <hasSideDish rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Salad"/>
+        <hasChicken rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#SliceChicken"/>
+        <isTypeOf rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#SouthAfricanBiryani"/>
+        <hasChicken rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#TandooriChicken"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#SouthIndianBiryani -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#SouthIndianBiryani">
+        <rdf:type rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#SouthIndianBiryani"/>
+        <hasCaloryValue rdf:datatype="&xsd;integer">450</hasCaloryValue>
+        <hasRiceBase rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Basmati"/>
+        <hasSideDish rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Brinjal"/>
+        <hasSideDish rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#DahiChutne"/>
+        <hasSpices rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#ExtremeAmount"/>
+        <isTypeOf rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Indian"/>
+        <hasSideDish rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Korma"/>
+        <hasMeat rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#RostChicken"/>
+        <hasChicken rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#RostChicken"/>
+        <hasSideDish rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Salad"/>
+        <hasMeat rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#SliceChicken"/>
+        <hasChicken rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#SliceChicken"/>
+        <hasChicken rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#TandooriChicken"/>
+        <hasMeat rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#TandooriChicken"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Spices&amp;Condiments -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Spices&amp;Condiments">
+        <rdf:type rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Spices&amp;Condiments"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#TandooriChicken -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#TandooriChicken">
+        <rdf:type rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Chicken"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Tehari -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Tehari">
+        <rdf:type rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Tehari"/>
+        <hasCaloryValue rdf:datatype="&xsd;integer">280</hasCaloryValue>
+        <hasRiceBase rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Basmati"/>
+        <hasSideDish rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Brinjal"/>
+        <hasSideDish rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#DahiChutne"/>
+        <isTypeOf rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Indian"/>
+        <hasVegitable rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Potato"/>
+        <hasSpices rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#RegularAmount"/>
+        <hasSideDish rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Salad"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#ThailandBiryani -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#ThailandBiryani">
+        <rdf:type rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#ThailandBiryani"/>
+        <hasCaloryValue rdf:datatype="&xsd;integer">350</hasCaloryValue>
+        <hasMeat rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Beef"/>
+        <hasSideDish rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Brinjal"/>
+        <hasEgg rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#FriedEgg"/>
+        <hasMeat rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#FriedFish"/>
+        <hasVegitable rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#FriedOnion"/>
+        <hasSideDish rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Korma"/>
+        <hasSize rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Large"/>
+        <isTypeOf rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#NonIndian"/>
+        <hasSize rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Regular"/>
+        <hasSpices rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#RegularAmount"/>
+        <hasSideDish rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Salad"/>
+        <hasChicken rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#SliceChicken"/>
+        <hasChicken rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#TandooriChicken"/>
+        <isTypeOf rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#ThailandBiryani"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#ThalasseryBiryani -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#ThalasseryBiryani">
+        <rdf:type rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#ThalasseryBiryani"/>
+        <hasVegitable rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Cashew"/>
+        <hasSideDish rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#DahiChutne"/>
+        <isTypeOf rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Indian"/>
+        <hasRiceBase rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Khyma"/>
+        <hasSideDish rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Korma"/>
+        <hasSpices rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#LargeAmount"/>
+        <hasSideDish rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Salad"/>
+        <hasMeat rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#TandooriChicken"/>
+        <hasChicken rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#TandooriChicken"/>
+        <hasVegitable rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Tomato"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Tomato -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Tomato">
+        <rdf:type rdf:resource="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Tomato"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#AfghanBiryani"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#BurmaBiryani"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#IndonesianBiryani"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#MauritiusBiryani"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#MiddleEastBiryani"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#PhilippineBiryani"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Singapore&amp;MalaysiaBiryani"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#SouthAfricanBiryani"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#ThailandBiryani"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#BeefBiryani"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#BhatKaliBiryani"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#KacchiBiryani"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Veg"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Brinjal"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#DahiChutney"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Korma"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Ratia"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Salad"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#ExtremeAmount"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#LargeAmount"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#RegularAmount"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#SmallAmount"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Beef"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Chicken"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Fish"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Mutton"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Prawn"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Basmati"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Chinigura"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#JeerkaSamba"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Khyma"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Ambur/VaniyambadiBiryan"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Bhatkali/NavayathiBiryani"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#BohriBiryani"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#ChettinadBiryani"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#DelhiBiryani"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#DhakaiyaHajiBiriyani"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#DindigulBiryani"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#HyderabadiBiryani"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#KalyaniBiryani"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#KolkataBiryani"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#Memoni/KutchiBiryani"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#RawtherBiryani"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#SindhiBiryani"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#SouthIndianBiryani"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/madushika/ontologies/2019/6/Biriyani#ThalasseryBiryani"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
